@@ -15,9 +15,9 @@
       <input type="text"  ng-model="toDo"/>
       <button ng-click="runClick()">Add item</button>
       <button ng-click="removeItem()">Remove item</button>
-      <div ng-repeat="toDo in toDoList">
-        {{toDo}}
-        <!-- <input type="checkbox" ng-value="toDo" ng-model="toDoList" /> -->
+      <div ng-repeat="toDo in toDoObject">
+        {{toDo.item}}
+        <input type="checkbox" ng-true-value="true" ng-model="toDo.remove" />
       </div>
     </div>
   </body>
